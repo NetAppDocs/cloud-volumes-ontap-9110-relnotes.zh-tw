@@ -20,7 +20,7 @@ summary: 包含全新的增強功能。Cloud Volumes ONTAP
 
 
 
-== 支援彈性磁碟區（2022年6月6日）
+== 支援彈性磁碟區（2022年6月7日）
 
 支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只是一個可提供更好的效能和額外容量、同時Cloud Manager還能視需要自動增加基礎磁碟容量。
 
