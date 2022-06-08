@@ -382,11 +382,9 @@
   <block id="8e54c9dd2c325f6430e1789d91c327ee" category="list-text">E8ds_v4 ^1^</block>
   <block id="5d47d15bb6c95cde595a22f670bc8cdf" category="list-text">E32ds_v4 ^1^</block>
   <block id="a9161f4d77d799baa3a3dc4cfeaefca3" category="list-text">E48ds_v4 ^1^</block>
-  <block id="195512f323b29b79f5b71cceb3a49a7d" category="list-text">E80ids_v4 ^2^</block>
   <block id="3e7433721426ddc5bb6007a1f480b7e0" category="cell">支援的磁碟類型</block>
   <block id="8dbeeeefc901c0dbb39a9c1332aaeeb9" category="cell">優質網頁</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">深入瞭解如何選擇寫入速度</block>
-  <block id="937cb82fad9af153ff18d3ee14caebd5" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP使用單一節點系統時、所有執行個體類型都支援高速寫入。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="4efc25f6cc7013d95ca2f5ab1dcc3366" category="list-text">建議僅在需要Azure維護控管時才使用此VM。由於價格較高、因此不建議用於任何其他使用案例。</block>
   <block id="d642bc6852e213242f2c21d17b6d3e43" category="list-text">Azure中的HA配對不支援PAYGO Explore。</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">支援的磁碟大小</block>
@@ -752,4 +750,7 @@
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">解決方案ONTAP</block>
   <block id="69c66585077895e1652860605b3e1687" category="section-title">支援彈性磁碟區（2022年6月7日）</block>
+  <block id="0d8238cb20fb41ede1eb68d45d598c4f" category="list-text">使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
+  <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4 ^1、1^</block>
+  <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
 </blocks>
