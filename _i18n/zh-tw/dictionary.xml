@@ -84,9 +84,7 @@
   <block id="38797647ee0806ca5a6dba902f03f6e0" category="cell">每個授權368TB</block>
   <block id="376c581ebe9ec9aa8853377f8538ebbd" category="cell">容量型授權</block>
   <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PIB</block>
-  <block id="2819feead2b07762a4465189ab8b2f52" category="section-title">對於HA配對、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TB的容量。</block>
-  <block id="7093c2c9844cf46dcd5d50c6d596d244" category="section-title">對於HA配對、鏡射資料是否會根據授權容量限制計算？</block>
   <block id="1ddc84b3dc9fe6599d89fd9b7f5c6660" category="paragraph">不、這不需要。HA配對中的資料會在節點之間同步鏡射、以便在Google Cloud發生故障時提供資料。例如、如果您在節點A上購買8 TB磁碟、Cloud Manager也會在節點B上配置8 TB磁碟、用於鏡射資料。雖然已配置16 TB容量、但根據授權上限、僅需8 TB。</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">磁碟和分層限制</block>
   <block id="49e0d392d83f24aa1384f18b22975ef6" category="paragraph">下表顯示單一磁碟的最大系統容量、以及磁碟和冷資料分層至物件儲存設備的最大系統容量。磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。</block>
@@ -209,13 +207,10 @@
   <block id="4a67bdd5f30eeac9ad064fc6433dc926" category="cell">10 TiB</block>
   <block id="61dcfaac24363a16e4b318c1317f0309" category="cell">368TiB</block>
   <block id="7751129b8546a0da65fb379b1cc9c243" category="cell">每個授權368TiB</block>
-  <block id="2f9882645b2c32820ad085240bacb763" category="section-title">對於HA、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="44007958b04e5e15a25a3ca1ee98abeb" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。</block>
-  <block id="fc9a388cd18c69244f22554de6f0d544" category="section-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
   <block id="8644b747d80d3144a35c2f7a3eb37c2e" category="paragraph">不、這不需要。AWS HA配對中的資料會在節點之間同步鏡射、以便在發生故障時提供資料。例如、如果您在節點A上購買8個TiB磁碟、Cloud Manager也會在節點B上配置8個TiB磁碟、用於鏡射資料。雖然已配置16個TiB容量、但根據授權上限只計算8個TiB。</block>
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">EC2執行個體的磁碟和分層限制</block>
   <block id="5a9c94e941761c15ef227dfa8c3fc6d8" category="paragraph">使用EBS磁碟區做為磁碟、磁碟大小上限為16 TiB。Cloud Volumes ONTAP以下各節顯示EC2執行個體系列的磁碟和分層限制、因為許多EC2執行個體類型具有不同的磁碟限制。單一節點系統與HA配對之間的磁碟限制也不同。</block>
-  <block id="e197fb210372b9fefa18060ae467b367" category="list-text">新Cloud Volumes ONTAP 的版本不支援c4、m4和r4執行個體類型。不過、我們仍顯示這些執行個體類型的磁碟限制、因為您可以在其中一種執行個體類型上執行時、將系統升級至9.10.0版本。</block>
   <block id="5eb6e090da55ad28bf2f9c1286619ef2" category="list-text">下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。</block>
   <block id="275e3ef1a302e67e93bcf0f30d566f74" category="inline-link">瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善</block>
   <block id="bb1dfd389b14b44028041022a8d2899f" category="list-text">您現在可以購買Cloud Volumes ONTAP 多個節點型授權給某個以供使用的解決方案、以分配超過368TiB的容量。單一節點系統或 HA 配對可購買的授權數量不受限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>。</block>
@@ -755,4 +750,5 @@
   <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xlarge</block>
+  <block id="c50e8615eb65e21639a9b12f16b31280" category="list-text">此Cloud Volumes ONTAP 版本中的全新版本不支援c4、m4和r4執行個體類型。不過、我們仍顯示這些執行個體類型的磁碟限制、因為您可以在其中一種執行個體類型上執行時、將系統升級至此版本。</block>
 </blocks>
