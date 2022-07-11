@@ -665,4 +665,5 @@
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">容量型授權的形式為_package_。當您部署Cloud Volumes ONTAP 一套解決方案時、您可以根據業務需求、從多個授權套件中進行選擇。</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">深入瞭解這些授權選項</block>
   <block id="f3b3e9858be5dbfaf6c39891db3263a2" category="paragraph"><block ref="f3b3e9858be5dbfaf6c39891db3263a2" category="inline-link-rx"></block></block>
+  <block id="346f7f627d1a93bfbf315865554048c6" category="list-text">反勒索軟體</block>
 </blocks>
