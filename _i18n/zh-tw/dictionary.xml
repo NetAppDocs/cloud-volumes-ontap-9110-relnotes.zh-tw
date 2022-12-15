@@ -29,12 +29,7 @@
   <block id="38220a2514a2fcb218be440c035b4175" category="section-title">支援保留和隨需VM執行個體Cloud Volumes ONTAP</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援其他類型的VM執行個體。</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">自動應用程式資源管理解決方案不應管理Cloud Volumes ONTAP 功能完善的系統。否則可能會變更不受支援的組態。例如、解決方案Cloud Volumes ONTAP 可能會變更為不受支援的VM執行個體類型。</block>
-  <block id="1d7a5501cfb31aff808abb63ef9085c2" category="section-title">軟體更新必須由Cloud Manager完成</block>
-  <block id="93e3c3d0ea43d600b3c3cd4548ea3987" category="paragraph">必須從 Cloud Manager 完成升級。 Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。</block>
   <block id="cbc4bd981852b46f0fbf6e6a6d4ed5af" category="section-title">不得從雲端供應商的主控台修改部署Cloud Volumes ONTAP</block>
-  <block id="5f706f3e7b360cd0d02bd068f4ba9afa" category="paragraph">從Cloud Volumes ONTAP 雲端供應商的主控台變更支援的支援功能組態、會導致不受支援的組態設定。Cloud Manager所建立及管理的任何更新、都可能影響系統穩定性及Cloud Manager管理系統的能力。Cloud Volumes ONTAP</block>
-  <block id="871cdf07a10d1cc27cb3166e7a820a66" category="section-title">磁碟和集合體必須從Cloud Manager進行管理</block>
-  <block id="dbdb55d3acfbb139cd66db544b19d738" category="paragraph">所有磁碟和集合體都必須直接從 Cloud Manager 建立和刪除。您不應從其他管理工具執行這些動作。這樣做可能會影響系統穩定性、阻礙未來新增磁碟的能力、並可能產生備援雲端供應商費用。</block>
   <block id="4d2719ea5599a5bf1a9973d3b247f959" category="section-title">不受授權限制SnapManager</block>
   <block id="c91bb6f1740b2a7b3e274deca5e32b94" category="paragraph">支援以伺服器為單位的各個伺服器授權。SnapManager Cloud Volumes ONTAP不SnapManager 支援每個儲存系統（不支援此套件）授權。</block>
   <block id="c3f5fdee9b6adb6eccff2d4c189ead12" category="section-title">不支援ONTAP 的支援功能</block>
@@ -66,7 +61,6 @@
   <block id="b3dfe19c7d46d1f8795ac17bf3d5a909" category="paragraph">提供可靠作業的儲存組態限制。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。</block>
   <block id="ecedb9353641e4bd058af0268a6edce8" category="section-title">依授權提供的最大系統容量</block>
   <block id="6fa7d9268a4a052eee070e7e621245fe" category="paragraph">整個系統的最大容量Cloud Volumes ONTAP 取決於其授權。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。</block>
-  <block id="b160602445b0a1ec96684f26bf8b35d3" category="paragraph">NetApp不支援超過系統容量限制。如果您達到授權容量上限、Cloud Manager會顯示必要行動訊息、不再允許您新增其他磁碟。</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link">將非作用中資料分層至物件儲存設備</block>
   <block id="b5110a96ee31f0d84f4df3d51e44588e" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。您可以達到容量上限<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。如需詳細資料、請參閱下列磁碟限制。</block>
   <block id="794df3791a8c800841516007427a2aa3" category="cell">授權</block>
@@ -84,7 +78,6 @@
   <block id="376c581ebe9ec9aa8853377f8538ebbd" category="cell">容量型授權</block>
   <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PIB</block>
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TB的容量。</block>
-  <block id="1ddc84b3dc9fe6599d89fd9b7f5c6660" category="paragraph">不、這不需要。HA配對中的資料會在節點之間同步鏡射、以便在Google Cloud發生故障時提供資料。例如、如果您在節點A上購買8 TB磁碟、Cloud Manager也會在節點B上配置8 TB磁碟、用於鏡射資料。雖然已配置16 TB容量、但根據授權上限、僅需8 TB。</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">磁碟和分層限制</block>
   <block id="49e0d392d83f24aa1384f18b22975ef6" category="paragraph">下表顯示單一磁碟的最大系統容量、以及磁碟和冷資料分層至物件儲存設備的最大系統容量。磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。</block>
   <block id="83f499a540b1323009c200d6f8cc9396" category="cell">參數</block>
@@ -139,7 +132,6 @@
   <block id="38de34e4b49b8adfeb2c678818915204" category="cell">4、995</block>
   <block id="1a07b3809a1ae9afeb461f935181ced5" category="cell">* Snapshot複本*</block>
   <block id="e8bd298f1a45dbe18647bf02f27ac92e" category="cell">1、023</block>
-  <block id="f930216066584d74a1d100b4781661f9" category="list-text">Cloud Manager不提供任何SVM災難恢復的設定或協調支援。它也不支援其他SVM上的儲存相關工作。您必須使用System Manager或CLI進行SVM災難恢復。</block>
   <block id="412af2a2404a4e920b18be59197204b0" category="inline-link">SVM 災難恢復準備快速指南</block>
   <block id="c15bb50c43eaf0ceb1bc0ce3d7503ebd" category="list-text"><block ref="c15bb50c43eaf0ceb1bc0ce3d7503ebd" category="inline-link-rx"></block></block>
   <block id="a06e9c241b02eb678d35f19c0eec257f" category="inline-link">SVM Disaster Recovery Express 指南</block>
@@ -166,10 +158,6 @@
   <block id="2f54a24e27032c204d405a8ab4727fa6" category="doc">《》發行說明Cloud Volumes ONTAP</block>
   <block id="c5d699450790178e60948a45fcba6733" category="summary">包含全新的增強功能。Cloud Volumes ONTAP</block>
   <block id="f747db0e9b603a98fe752d35abb43555" category="doc">更新功能Cloud Volumes ONTAP</block>
-  <block id="f9d74313da16b2bb412c1d7c5efd0534" category="inline-link">Cloud Manager版本資訊</block>
-  <block id="62703524dbb4d20326585184b2149d4d" category="paragraph">最新版Cloud Manager也會提供其他功能與增強功能。請參閱<block ref="b168941a5dc7eab411ef9dc2c7a220db" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="2e2c03493705dc64283827f16a01fab5" category="paragraph">支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只是一個可提供更好的效能和額外容量、同時Cloud Manager還能視需要自動增加基礎磁碟容量。</block>
-  <block id="b2770b8037722018d91ab46e71a80c59" category="paragraph">從Cloud Manager Connector的3.9.19版本開始、即可支援彈性磁碟區、並支援特定Cloud Volumes ONTAP 的版本、以及特定的EBS磁碟類型。</block>
   <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link">深入瞭解彈性磁碟區的支援</block>
   <block id="b9408f9a2640eac04ef9dd944a3cfe81" category="paragraph"><block ref="b9408f9a2640eac04ef9dd944a3cfe81" category="inline-link-rx"></block></block>
   <block id="21c41da3d84aadd8771c9d5e1db4032e" category="section-title">9.11.0 P1（2022年5月2日）</block>
@@ -179,18 +167,13 @@
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
   <block id="5e02c0dddf5ca2c2a77a3cacc5cfea9b" category="list-text">搭配使用功能的S3的主要用途是ONTAP 一般用途物件儲存區。Cloud Volumes ONTAP</block>
   <block id="5252476cb34632463947449f62af599b" category="list-text">目前、Google Cloud Volumes ONTAP Cloud不支援使用S3傳輸協定。</block>
-  <block id="c5444b69e0d4a498ada01a16f84ab46d" category="list-text">Cloud Manager無法提供ONTAP 任何有關「支援不支援」S3功能的管理功能。</block>
   <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">瞭解如何在ONTAP 功能區中設定及管理S3物件儲存服務</block>
   <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>。</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">升級附註</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">請閱讀這些附註、深入瞭解升級至此版本的相關資訊。</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">如何升級</block>
-  <block id="1c58b0eb30a6dcb357eb70a5f2b7b763" category="inline-link">瞭解如何在Cloud Manager通知您的情況下進行升級</block>
-  <block id="803d45df8eb29c3872409cc750868adb" category="paragraph"><block ref="91157be1d04ccb789488c1869d33e63c" category="inline-link-rx"></block>。</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">支援的升級途徑</block>
-  <block id="26317bf7459e73707ee916570832e5d0" category="paragraph">您可以從Cloud Volumes ONTAP 9.10.1版升級至版本的版本。Cloud Manager會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
   <block id="402e8d971886b1604e4de74c0058dc71" category="section-title">所需版本的Connector</block>
-  <block id="089931e7f88b7a409ed7ad2ba44d8100" category="paragraph">Cloud Manager Connector必須執行3.9.18版或更新版本、才能將現有系統升級至9.11.0版。</block>
   <block id="cc85911ae6bc3b2540142e310528310b" category="admonition">連接器的自動升級預設為啟用、因此您應該執行最新版本。</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">停機</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。</block>
@@ -204,7 +187,6 @@
   <block id="61dcfaac24363a16e4b318c1317f0309" category="cell">368TiB</block>
   <block id="7751129b8546a0da65fb379b1cc9c243" category="cell">每個授權368TiB</block>
   <block id="44007958b04e5e15a25a3ca1ee98abeb" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。</block>
-  <block id="8644b747d80d3144a35c2f7a3eb37c2e" category="paragraph">不、這不需要。AWS HA配對中的資料會在節點之間同步鏡射、以便在發生故障時提供資料。例如、如果您在節點A上購買8個TiB磁碟、Cloud Manager也會在節點B上配置8個TiB磁碟、用於鏡射資料。雖然已配置16個TiB容量、但根據授權上限只計算8個TiB。</block>
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">EC2執行個體的磁碟和分層限制</block>
   <block id="5a9c94e941761c15ef227dfa8c3fc6d8" category="paragraph">使用EBS磁碟區做為磁碟、磁碟大小上限為16 TiB。Cloud Volumes ONTAP以下各節顯示EC2執行個體系列的磁碟和分層限制、因為許多EC2執行個體類型具有不同的磁碟限制。單一節點系統與HA配對之間的磁碟限制也不同。</block>
   <block id="5eb6e090da55ad28bf2f9c1286619ef2" category="list-text">下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。</block>
@@ -309,7 +291,6 @@
   <block id="02e74f10e0327ad868d138f2b4fdd6f0" category="cell">27</block>
   <block id="67c6a1e7ce56d3d6fa748ab6d9af3fd7" category="cell">47</block>
   <block id="ecec66d315c28b83ea2e4c24466a6778" category="list-text">此數字表示Cloud Volumes ONTAP 在部署及設定完物件後、連接埠e0a上有多少可用的_Remained_私有IP位址。例如、*。2xLarge系統每個網路介面最多可支援15個IP位址。在單一AZ中部署HA配對時、會將5個私有IP位址分配給連接埠e0a。因此、使用*。2xLarge執行個體類型的HA配對、還有10個私有IP位址可供其他儲存VM使用。</block>
-  <block id="717ac98dd2c26224834bdc47a5a79849" category="list-text">這些欄中所列的數字包括Cloud Manager預設所建立的初始儲存VM。例如、如果此欄中列出24個、表示您可以建立23個額外的儲存VM、總共24個。</block>
   <block id="5be8cdd9a3ac4856418d3e7ef11fe0d1" category="list-text">儲存VM的管理LIF為選用功能。管理LIF可連線至SnapCenter 諸如VMware等管理工具。</block>
   <block id="d5b5d1eda2a2c0d060f59094000e6aea" category="paragraph">因為它需要私有IP位址、所以會限制您可以建立的額外儲存VM數量。唯一的例外是多個AZs中的HA配對。在這種情況下、管理LIF的IP位址是_浮 點IP位址、因此不會計入_Private IP限制。</block>
   <block id="4f9154c68af93dc525373bf1a9c2edce" category="section-title">檔案與Volume限制</block>
@@ -433,7 +414,6 @@
   <block id="032ad17d65f47ce036675718d3986c48" category="paragraph">C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 可做為_Flash Cache。請注意下列限制：</block>
   <block id="341cc964e0c52fec40f9705182116dda" category="list-text">所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。</block>
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">使用 CLI 停用資料壓縮</block>
-  <block id="e7c76e369ac11cd66c4eb87009b46b45" category="paragraph">從Cloud Manager建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立<block ref="41233aab48d70287f1bbc60d78ce6eab" category="inline-link-rx"></block>。</block>
   <block id="444f10b28a63ab25d9664d0647602d07" category="list-text">重新開機後的快取重新溫熱功能不支援 Cloud Volumes ONTAP 使用此功能。</block>
   <block id="c564897ef3b9328940c3edd5bc917926" category="section-title">Amazon CloudWatch回報的誤報</block>
   <block id="4b88d56bd65ef92611ac63064c38369f" category="inline-link">Amazon CloudWatch</block>
@@ -450,7 +430,6 @@
   <block id="2967727d3f344e8a55ae0d47d294d7d1" category="paragraph">啟用封包鏡射時、無法正常運作。Cloud Volumes ONTAP</block>
   <block id="b5050f17750ec84285bec219771841c4" category="section-title">Google Private Service Connect限制</block>
   <block id="9fb3c7aadbb59d428d3c01efb5689f4b" category="inline-link">Google Private Service Connect</block>
-  <block id="7af98a0e0cd62cd4ddc103341d51fda2" category="inline-link">Cloud Manager API端點</block>
   <block id="406156e49006d700786c581646d94504" category="paragraph">Private Service Connect目前不支援將Cloud Volumes ONTAP 資料從功能區分層至Google Cloud Storage儲存庫。</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="doc">授權總覽</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">下列授權選項適用於新客戶。</block>
@@ -481,7 +460,6 @@
   <block id="b4c4a8c75337dc28089aec3e79ae943c" category="list-text">PAYGO Explore不支援將資料分層至Google Cloud Storage。</block>
   <block id="46e869bc0f7a5fcdc09df010e1f48b25" category="list-text">全新Cloud Volumes ONTAP 的功能不再支援custom 4-16384機器類型。</block>
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">如果您在此機器類型上執行現有的系統、您可以繼續使用、但我們建議您切換至n2-Standard-4機器類型。</block>
-  <block id="1d929e66099bae4b599c315f4d90f467" category="list-text">Cloud Manager介面顯示標準和BYOL支援的其他機器類型：NA-HIGHEM-4。不過、這種機器類型並不適用於正式作業環境。我們僅針對特定的實驗室環境提供此功能。</block>
   <block id="7093754c2bc2f151c7deef337385971a" category="list-text">如需Google Cloud Platform區域支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="d29bff99e1f1d5529824e9017672d630" category="paragraph">在Google Cloud中、Aggregate最多可包含6個相同類型和大小的磁碟。支援下列磁碟大小：</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="list-text">100 GB</block>
@@ -636,9 +614,7 @@
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">解決方案ONTAP</block>
   <block id="69c66585077895e1652860605b3e1687" category="section-title">支援彈性磁碟區（2022年6月7日）</block>
-  <block id="0d8238cb20fb41ede1eb68d45d598c4f" category="list-text">使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4 ^1、1^</block>
-  <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從Cloud Manager啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xlarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xlarge</block>
   <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">提供不同的授權選項、讓您選擇符合需求的消費模式。Cloud Volumes ONTAP</block>
@@ -653,12 +629,36 @@
   <block id="f072eddf76dc8c19f3d32a7263fe7931" category="paragraph"><block ref="37cca4b92d12a1904a84ee04c60f6ada" category="inline-link-macro-rx"></block>。</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp支援</block>
   <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">請參閱 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 以深入瞭解這些執行個體類型的終止可用度和支援。</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">對於HA配對、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">對於HA配對、鏡射資料是否會根據授權容量限制計算？</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">不應使用自動應用程式資源管理解決方案</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">對於HA、每個節點或整個HA配對的授權容量限制是多少？</block>
-  <block id="da934d10ecc6d50a861d9470630d4989" category="paragraph">如果您善用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的<block ref="c291f5ab92cbab017e6f29ee8a0edb54" category="inline-link-rx"></block>。</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
   <block id="8e36f0f32d75ebd3c7851e726c538544" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block></block>
+  <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">BlueXP介面顯示標準和BYOL支援的其他機器類型：NA-HIGHEM-4。不過、這種機器類型並不適用於正式作業環境。我們僅針對特定的實驗室環境提供此功能。</block>
+  <block id="406542fd6b2bb7b1e564e4a6d627bddb" category="paragraph">NetApp不支援超過系統容量限制。如果您達到授權容量上限、則BlueXP會顯示必要行動訊息、不再允許您新增其他磁碟。</block>
+  <block id="59f715c959b1702bb88d03230a637982" category="paragraph">不、這不需要。AWS HA配對中的資料會在節點之間同步鏡射、以便在發生故障時提供資料。例如、如果您在節點A上購買8個TiB磁碟、則BlueXP也會在節點B上配置8個TiB磁碟、用於鏡射資料。雖然已配置16個TiB容量、但根據授權上限只計算8個TiB。</block>
+  <block id="846a4ecea919427b6111365c125ada6f" category="list-text">這些欄中所列的數字、包括了BlueXP預設會建立的初始儲存VM。例如、如果此欄中列出24個、表示您可以建立23個額外的儲存VM、總共24個。</block>
+  <block id="bbccc552f0baf5d6702dcf1598299981" category="list-text">BlueXP不提供任何SVM災難恢復的設定或協調支援。它也不支援其他SVM上的儲存相關工作。您必須使用System Manager或CLI進行SVM災難恢復。</block>
+  <block id="38575f0fc0d26dc67b2a72ebc7d0e845" category="paragraph">從BlueXP建立磁碟區時、您可以選擇「無儲存效率」、也可以先建立磁碟區、然後再建立<block ref="41233aab48d70287f1bbc60d78ce6eab" category="inline-link-rx"></block>。</block>
+  <block id="fd1f8e9df9f2971a09de148f57ee5ce0" category="section-title">軟體更新必須由BlueXP完成</block>
+  <block id="c6925d752394e325c0b435137fbe997c" category="paragraph">必須從BlueXP完成升級。Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。</block>
+  <block id="93931e849ddff0b1178bc9a719400883" category="paragraph">從Cloud Volumes ONTAP 雲端供應商的主控台變更支援的支援功能組態、會導致不受支援的組態設定。任何對BlueXP所建立及管理的支援資源所做的變更Cloud Volumes ONTAP 、都會影響系統穩定性和BlueXP管理系統的能力。</block>
+  <block id="50cc29422b9e0a20958b889dcdd61a0f" category="section-title">磁碟和集合體必須從BlueXP進行管理</block>
+  <block id="0dca6333e3e343d1b25adfe474ce6b88" category="paragraph">所有磁碟和集合體都必須直接從BlueXP建立和刪除。您不應從其他管理工具執行這些動作。這樣做可能會影響系統穩定性、阻礙未來新增磁碟的能力、並可能產生備援雲端供應商費用。</block>
+  <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP版本說明</block>
+  <block id="619c180e46c9dec776a0347d35298e14" category="paragraph">最新版的BlueXP也會提供其他功能和增強功能。請參閱<block ref="6872c7556ed1cb501f7ddf52354e86ee" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="a664792112a913f59a72fe1a80814deb" category="paragraph">支援Amazon EBS Elastic Volumes功能搭配Cloud Volumes ONTAP 使用支援的不只能提供更好的效能和額外容量、還能讓BlueXP自動視需要增加基礎磁碟容量。</block>
+  <block id="15680305ff6d343b532feb43c4a0f501" category="paragraph">從BlueXP Connector的3.9.19版本開始、即可支援彈性磁碟區、並支援特定Cloud Volumes ONTAP 的版本、以及特定的EBS磁碟類型。</block>
+  <block id="c960a27070b92b29a446eed274113eaa" category="list-text">BlueXP無法提供ONTAP 任何有關「支援不支援」S3功能的管理功能。</block>
+  <block id="c716eebe2519c2ba4a2e109b59dd8b13" category="inline-link">瞭解如何在BlueXP通知您時進行升級</block>
+  <block id="bd4bd858d3e1a85d30586455b3e9daf2" category="paragraph"><block ref="6a49825bad49c3be284ac7a237bc2a26" category="inline-link-rx"></block>。</block>
+  <block id="535c3021cec91ff5644d5806519cada5" category="paragraph">您可以從Cloud Volumes ONTAP 9.10.1版升級至版本的版本。BlueXP會提示您將合格Cloud Volumes ONTAP 的更新版升級至此版本。</block>
+  <block id="5eaf873931f55b8762ee767f05a1cd4c" category="paragraph">BlueXP Connector必須執行3.9.18版或更新版本、才能將現有系統升級至9.11.0版。</block>
+  <block id="07daff7fe86cfb582b0c246d7cefb754" category="list-text">使用單一節點系統時、所有執行個體類型都支援高速寫入。您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
+  <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">使用HA配對時、支援這些VM類型的高速寫入速度。Cloud Volumes ONTAP您可以在部署期間或之後的任何時間、從BlueXP啟用高速寫入速度。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
+  <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API端點</block>
+  <block id="e86e72989c257fb5c6ba8da24c2c7c48" category="paragraph">如果您善用<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> 在您部署Cloud Volumes ONTAP 的VPC中、您需要實作DNS記錄、將流量轉送至所需的<block ref="85f106dabc925307c90ceeec8d21a18f" category="inline-link-rx"></block>。</block>
+  <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">不、這不需要。HA配對中的資料會在節點之間同步鏡射、以便在Google Cloud發生故障時提供資料。例如、如果您在節點A上購買8 TB磁碟、則BlueXP也會在節點B上配置8 TB磁碟、用於鏡射資料。雖然已配置16 TB容量、但根據授權上限、僅需8 TB。</block>
+  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
 </blocks>
