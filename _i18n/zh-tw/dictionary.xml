@@ -591,8 +591,6 @@
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">深入瞭解這些授權選項</block>
   <block id="346f7f627d1a93bfbf315865554048c6" category="list-text">反勒索軟體</block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
-  <block id="e7a585efb4ff7fae4274ad6c7457c7c6" category="section-title">不再支援的c4、m4和r4執行個體（2022年10月28日）</block>
-  <block id="841d1ec868d8656a6dc9f74fd65112d6" category="paragraph">在AWS中Cloud Volumes ONTAP 、不再支援C4、M4和R4 EC2執行個體類型。如果現有的系統執行於c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">瞭解如何變更EC2執行個體類型Cloud Volumes ONTAP 以供使用</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp支援</block>
   <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">請參閱 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 以深入瞭解這些執行個體類型的終止可用度和支援。</block>
@@ -638,7 +636,6 @@
   <block id="100e0e5b58741c034dadba013998e8b8" category="list-text">如果您的組態支援Amazon EBS彈性磁碟區功能、則Aggregate最多可包含8個磁碟、最多可提供128 TiB的容量。使用GP3或IO1磁碟時、Amazon EBS Elastic Volumes功能預設會在_new _ Cloud Volumes ONTAP 版本9.11.0或更新的系統上啟用。<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
   <block id="c0ad13124302d4d047c0f916a6418182" category="paragraph"><block ref="cc3941262f254d1055804ecddca39dec" category="inline-link-rx"></block>。</block>
   <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">最新版的BlueXP也會提供其他功能和增強功能。請參閱<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
   <block id="6b654a614823c350198276575945b17b" category="paragraph"><block ref="6b654a614823c350198276575945b17b" category="inline-link-rx"></block></block>
   <block id="4b323e04ca5d7cc4cd4fa2663891f134" category="paragraph"><block ref="1098c1d48c661da787dab89e43caa652" category="inline-link-rx"></block>。</block>
   <block id="64440bb71539a777dc59cfbda8a3e5ee" category="list-text">這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
@@ -660,4 +657,9 @@
 單一資料服務SVM橫跨Cloud Volumes ONTAP 整個支援系統（HA配對或單一節點）。</block>
   <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="list-text">您可以為 Cloud Volumes ONTAP BYOL 單一節點或 HA 配對系統購買多個節點型授權、以分配超過 368 TiB 的容量、最多可分配 2 PIB 的最大測試和支援系統容量限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>。雖然 Cloud Volumes ONTAP 支援最多 2 個 PIB 的最大測試和支援系統容量、但超過 2 個 PIB 限制會導致系統組態不受支援。</block>
   <block id="de9d6749570efc87e63811b5947fc250" category="list-text">AWS Secret Cloud 和 Top Secret Cloud 地區支援從 Cloud Volumes ONTAP 9.12.1 開始購買多個節點型授權。</block>
+  <block id="b74a118169165fd9778df58b68c1bf8b" category="section-title">使用 C4 、 M4 和 R4 EC2 執行個體類型在 AWS 中升級</block>
+  <block id="fbf9b099d9ec8deac1671938fd60e8f8" category="paragraph">在 AWS 中、新的 Cloud Volumes ONTAP 部署不再支援 C4 、 M4 和 R4 EC2 執行個體類型。如果現有的系統執行於c4、m4或r4執行個體類型、則必須變更為c5、m5或R5執行個體系列中的執行個體類型。如果您無法變更執行個體類型、則必須在升級之前啟用增強的網路功能。</block>
+  <block id="e1ec06a3bd4a559443a88f1cb6736c26" category="inline-link-macro">瞭解如何使用 C4 、 M4 和 R4 EC2 執行個體類型升級 AWS</block>
+  <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>。
+<block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
 </blocks>
