@@ -18,6 +18,7 @@ summary: 在Azure中、由於儲存組態限制、因此可提供可靠的作業
 
 
 
+[[maximum-system-capacity-by-license]]
 == 依授權提供的最大系統容量
 
 整個系統的最大容量Cloud Volumes ONTAP 取決於其授權。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。
@@ -51,6 +52,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 
 
+[[disk-and-tiering-limits-by-vm-size]]
 == 磁碟和分層限制、依VM大小而定
 
 下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括根磁碟、核心磁碟和VNVRAM。
@@ -64,6 +66,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 
 
+[[single-node-with-a-premium-license]]
 === 具有Premium授權的單一節點
 
 [cols="14,20,31,33"]
@@ -99,6 +102,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 |===
 
 
+[[single-node-with-node-based-licensing]]
 === 具有節點型授權的單一節點
 
 [cols="10,18,18,18,18,18"]
@@ -158,6 +162,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 |===
 
 
+[[single-node-with-capacity-based-licensing]]
 === 具有容量型授權的單一節點
 
 [cols="14,20,31,33"]
@@ -214,6 +219,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 |===
 
 
+[[ha-pairs-with-a-premium-license]]
 === HA與Premium授權配對
 
 [cols="14,20,31,33"]
@@ -246,6 +252,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 |===
 
 
+[[ha-pairs-with-node-based-licensing]]
 === HA與節點型授權配對
 
 [cols="10,18,18,18,18,18"]
@@ -290,6 +297,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 |===
 
 
+[[ha-pairs-with-capacity-based-licensing]]
 === HA與容量型授權配對
 
 [cols="14,20,31,33"]
@@ -331,6 +339,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 |===
 
 
+[[aggregate-limits]]
 == Aggregate限制
 
 使用Azure儲存設備做為磁碟、並將其分組為_aggregate。Cloud Volumes ONTAPAggregate可為磁碟區提供儲存設備。
@@ -360,6 +369,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 
 
+[[storage-vm-limits]]
 == 儲存VM限制
 
 有些組態可讓您建立更多的儲存VM（SVM）以Cloud Volumes ONTAP 供支援。
@@ -405,6 +415,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azur
 
 
 
+[[file-and-volume-limits]]
 == 檔案與Volume限制
 
 [cols="22,22,56"]
@@ -448,6 +459,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azur
 
 
 
+[[iscsi-storage-limits]]
 == iSCSI儲存限制
 
 [cols="3*"]

@@ -18,6 +18,7 @@ summary: 在Google Cloud中、由於儲存組態限制、可提供可靠的作�
 
 
 
+[[maximum-system-capacity-by-license]]
 == 依授權提供的最大系統容量
 
 整個系統的最大容量Cloud Volumes ONTAP 取決於其授權。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。
@@ -56,6 +57,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 
 
+[[disk-and-tiering-limits]]
 == 磁碟和分層限制
 
 下表顯示單一磁碟的最大系統容量、以及磁碟和冷資料分層至物件儲存設備的最大系統容量。磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。
@@ -84,6 +86,7 @@ NetApp不支援超過系統容量限制。如果您達到授權容量上限、�
 
 
 
+[[aggregate-limits]]
 == Aggregate限制
 
 Cloud Volumes ONTAP 將 Google Cloud 磁碟分組為 _Aggregate 。Aggregate可為磁碟區提供儲存設備。
@@ -117,6 +120,7 @@ Cloud Volumes ONTAP 將 Google Cloud 磁碟分組為 _Aggregate 。Aggregate可�
 
 
 
+[[logical-storage-limits]]
 == 邏輯儲存限制
 
 [cols="22,22,56"]
@@ -165,6 +169,7 @@ Cloud Volumes ONTAP 將 Google Cloud 磁碟分組為 _Aggregate 。Aggregate可�
 
 
 
+[[iscsi-storage-limits]]
 == iSCSI儲存限制
 
 [cols="3*"]
